@@ -3,11 +3,11 @@
 name: CI
 on:
    push:
-    branches: [ master ]
-  jobs:
-    build:
+    branches:  [ master ]
+jobs:
+  build:
    runs-on: ubuntu-latest
-       steps:
-              - uses: actions/checkout@v2
-                       - name: Run a one-line script
-        run: mvn package
+   steps:
+     - uses: actions/checkout@v2
+     - name: Run a one-line script
+       run: mvn package
